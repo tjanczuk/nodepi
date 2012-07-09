@@ -63,6 +63,87 @@
       </installer>
     </installers>
   </entry>
+
+  <entry>
+    <productId>Node0.6.17</productId>
+    <title resourceName="Entry_NodeJS_0.6.17_Title">Node.js v0.6.17 side by side add-on</title>
+    <version>0.6.17</version>
+    <summary resourceName="Entry_NodeJS_0.6.17_Summary">Node.JS is a server-side environment for JavaScript.</summary>
+    <longSummary resourceName="Entry_NodeJS_0.6.17_LongSummary">Node.JS is a server-side scripting environment for building highly scalable concurrent web applications using JavaScript.</longSummary>
+    <link href="http://nodejs.org/" />
+    <productFamily>nodejs family</productFamily>
+    <published>2011-12-15T12:00:00Z</published>
+    <updated>2012-02-10T12:00:00Z</updated>
+    <author>
+      <name>Joyent, Inc</name>
+      <uri>http://www.joyent.com/</uri>
+    </author>
+    <searchExclude/>
+    <images>
+      <icon>http://nodejs.org/images/logo.png</icon>
+    </images>
+    <dependency>
+      <productId>Node</productId>
+    </dependency>
+    <discoveryHint>
+      <or>
+        <discoveryHint>
+          <file>
+            <filePath>%programfiles%\nodejs\0.6.17\node.exe</filePath>
+            <minimumVersion>0.6.17</minimumVersion>
+          </file>
+        </discoveryHint>
+        <discoveryHint>
+          <file>
+            <filePath>%programfiles(x86)%\nodejs\0.6.17\node.exe</filePath>
+            <minimumVersion>0.6.17</minimumVersion>
+          </file>
+        </discoveryHint>
+      </or>
+    </discoveryHint>
+    <installers>
+      <installer>
+        <id>1</id>
+        <languageId>en</languageId>
+        <architectures>
+          <x86 />
+        </architectures>
+        <eulaURL>https://raw.github.com/joyent/node/master/LICENSE</eulaURL>
+        <installerFile>
+          <fileSize>4701</fileSize>
+          <installerURL>http://nodejs.org/dist/v0.6.17/node.exe</installerURL>
+          <sha1>fcc62d0b96517614f50c3967f29f6c8c73b27ec0</sha1>
+        </installerFile>
+        <installCommands>
+          <cmdline>
+            <exe>%WINDIR%\system32\cmd.exe</exe>
+            <commandLineArguments>/c mkdir "%programfiles%\nodejs\0.6.17" &amp; copy /Y "%InstallerFile%" "%programfiles%\nodejs\0.6.17"</commandLineArguments>
+          </cmdline>
+        </installCommands>
+        <helpLink>http://go.microsoft.com/?linkid=9790234</helpLink>
+      </installer>
+      <installer>
+        <id>2</id>
+        <languageId>en</languageId>
+        <architectures>
+          <x64 />
+        </architectures>
+        <eulaURL>https://raw.github.com/joyent/node/master/LICENSE</eulaURL>
+        <installerFile>
+          <fileSize>4701</fileSize>
+          <installerURL>http://nodejs.org/dist/v0.6.17/node.exe</installerURL>
+          <sha1>fcc62d0b96517614f50c3967f29f6c8c73b27ec0</sha1>
+        </installerFile>
+        <installCommands>
+          <cmdline>
+            <exe>%WINDIR%\system32\cmd.exe</exe>
+            <commandLineArguments>/c mkdir "%programfiles(x86)%\nodejs\0.6.17" &amp; copy /Y "%InstallerFile%" "%programfiles(x86)%\nodejs\0.6.17"</commandLineArguments>
+          </cmdline>
+        </installCommands>
+        <helpLink>http://go.microsoft.com/?linkid=9790234</helpLink>
+      </installer>
+    </installers>
+  </entry>
   
   <entry>
     <productId>Node0.6.19</productId>
@@ -146,11 +227,11 @@
   </entry>
 
   <entry>
-    <productId>Node0.8.0</productId>
-    <title resourceName="Entry_NodeJS_0.8.0_Title">Node.js v0.8.0 side by side add-on</title>
-    <version>0.8.0</version>
-    <summary resourceName="Entry_NodeJS_0.8.0_Summary">Node.JS is a server-side environment for JavaScript.</summary>
-    <longSummary resourceName="Entry_NodeJS_0.8.0_LongSummary">Node.JS is a server-side scripting environment for building highly scalable concurrent web applications using JavaScript.</longSummary>
+    <productId>Node0.8.1</productId>
+    <title resourceName="Entry_NodeJS_0.8.1_Title">Node.js v0.8.1 side by side add-on</title>
+    <version>0.8.1</version>
+    <summary resourceName="Entry_NodeJS_0.8.1_Summary">Node.JS is a server-side environment for JavaScript.</summary>
+    <longSummary resourceName="Entry_NodeJS_0.8.1_LongSummary">Node.JS is a server-side scripting environment for building highly scalable concurrent web applications using JavaScript.</longSummary>
     <link href="http://nodejs.org/" />
     <productFamily>nodejs family</productFamily>
     <published>2011-12-15T12:00:00Z</published>
@@ -170,14 +251,14 @@
       <or>
         <discoveryHint>
           <file>
-            <filePath>%programfiles%\nodejs\0.8.0\node.exe</filePath>
-            <minimumVersion>0.6.19</minimumVersion>
+            <filePath>%programfiles%\nodejs\0.8.1\node.exe</filePath>
+            <minimumVersion>0.8.1</minimumVersion>
           </file>
         </discoveryHint>
         <discoveryHint>
           <file>
-            <filePath>%programfiles(x86)%\nodejs\0.8.0\node.exe</filePath>
-            <minimumVersion>0.8.0</minimumVersion>
+            <filePath>%programfiles(x86)%\nodejs\0.8.1\node.exe</filePath>
+            <minimumVersion>0.8.1</minimumVersion>
           </file>
         </discoveryHint>
       </or>
@@ -191,14 +272,14 @@
         </architectures>
         <eulaURL>https://raw.github.com/joyent/node/master/LICENSE</eulaURL>
         <installerFile>
-          <fileSize>5089</fileSize>
-          <installerURL>http://nodejs.org/dist/v0.8.0/node.exe</installerURL>
-          <sha1>742100a4ee4cd4d190031a30d9b22b2b69b6872e</sha1>
+          <fileSize>5042</fileSize>
+          <installerURL>http://nodejs.org/dist/v0.8.1/node.exe</installerURL>
+          <sha1>85ce513182bd66c1aa3e144438022dbe4caa56a7</sha1>
         </installerFile>
         <installCommands>
           <cmdline>
             <exe>%WINDIR%\system32\cmd.exe</exe>
-            <commandLineArguments>/c mkdir "%programfiles%\nodejs\0.8.0" &amp; copy /Y "%InstallerFile%" "%programfiles%\nodejs\0.8.0"</commandLineArguments>
+            <commandLineArguments>/c mkdir "%programfiles%\nodejs\0.8.1" &amp; copy /Y "%InstallerFile%" "%programfiles%\nodejs\0.8.1"</commandLineArguments>
           </cmdline>
         </installCommands>
         <helpLink>http://go.microsoft.com/?linkid=9790234</helpLink>
@@ -211,14 +292,14 @@
         </architectures>
         <eulaURL>https://raw.github.com/joyent/node/master/LICENSE</eulaURL>
         <installerFile>
-          <fileSize>5089</fileSize>
-          <installerURL>http://nodejs.org/dist/v0.8.0/node.exe</installerURL>
-          <sha1>742100a4ee4cd4d190031a30d9b22b2b69b6872e</sha1>
+          <fileSize>5042</fileSize>
+          <installerURL>http://nodejs.org/dist/v0.8.1/node.exe</installerURL>
+          <sha1>85ce513182bd66c1aa3e144438022dbe4caa56a7</sha1>
         </installerFile>
         <installCommands>
           <cmdline>
             <exe>%WINDIR%\system32\cmd.exe</exe>
-            <commandLineArguments>/c mkdir "%programfiles(x86)%\nodejs\0.8.0" &amp; copy /Y "%InstallerFile%" "%programfiles(x86)%\nodejs\0.8.0"</commandLineArguments>
+            <commandLineArguments>/c mkdir "%programfiles(x86)%\nodejs\0.8.1" &amp; copy /Y "%InstallerFile%" "%programfiles(x86)%\nodejs\0.8.1"</commandLineArguments>
           </cmdline>
         </installCommands>
         <helpLink>http://go.microsoft.com/?linkid=9790234</helpLink>
@@ -239,8 +320,9 @@
           <groupingId>NodeJsFamilyGrouping</groupingId>
           <recommended>
             <productId>Node</productId>
+            <productId>Node0.6.17</productId>
             <productId>Node0.6.19</productId>
-            <productId>Node0.8.0</productId>
+            <productId>Node0.8.1</productId>
           </recommended>
         </pillar>
       </pillarTab>
